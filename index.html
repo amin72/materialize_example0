@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -21,6 +22,14 @@
     .section {
       padding-top: 4vw;
       padding-bottom: 4vw;
+    }
+
+    .tabs .indicator {
+      background-color: #1a237e;
+    }
+
+    .tabs .tab a:focus, .tabs .tab a:focus.active {
+      background: transparent;
     }
 
     @media screen and (max-width: 670px) {
@@ -80,6 +89,73 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta commodi labore saepe nam vero ex, repellendus et aperiam doloremque hic quaerat nisi corrupti, provident culpa eos. Dolore, perferendis illum!</p>
       </div>
     </div>
+
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="./img/street.jpg" alt="street">
+      </div>
+    </div>
+
+    <section class="section" id="services">
+      <div class="row">
+        <div class="col s12 l6">
+          <h2 class="indigo-text text-darken-4">What can I do...</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quos atque voluptatem sint hic deserunt, quaerat ex, corrupti fugit ipsum excepturi obcaecati, nemo animi minus reiciendis inventore. Possimus, ex dolore!</p>
+        </div>
+        <div class="col s12 l6 offset-2">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a class="indigo-text text-darken-4" href="#photography">Photography</a>
+            </li>
+            <li class="tab col s6">
+              <a class="indigo-text text-darken-4" href="#editing">Editing</a>
+            </li>
+          </ul>
+          <div class="col s12" id="photography">
+            <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sunt pariatur, in explicabo sint quas, libero dolore temporibus cupiditate minima non. Libero dolorem praesentium repellat corrupti placeat minima aliquam fugiat?</p>
+          </div>
+          <div class="col s12" id="editing">
+            <p class="flow-text indigo-text text-darken-4">EDITING</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sunt pariatur, in explicabo sint quas, libero dolore temporibus cupiditate minima non. Libero dolorem praesentium repellat corrupti placeat minima aliquam fugiat?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="./img/stars.jpg" alt="street">
+      </div>
+    </div>
+
+    <section class="section container" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ratione itaque maiores laborum aperiam amet vel maxime ullam quas earum, officiis totam consectetur atque nisi veniam delectus, deleniti dolor nulla.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ratione itaque maiores laborum aperiam amet vel maxime ullam quas earum, officiis totam consectetur atque nisi veniam delectus, deleniti dolor nulla.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ratione itaque maiores laborum aperiam amet vel maxime ullam quas earum, officiis totam consectetur atque nisi veniam delectus, deleniti dolor nulla.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ratione itaque maiores laborum aperiam amet vel maxime ullam quas earum, officiis totam consectetur atque nisi veniam delectus, deleniti dolor nulla.</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">Your Message</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </section>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <!-- Compiled and minified JavaScript -->
@@ -89,6 +165,8 @@
     $(document).ready(function() {
       $('.sidenav').sidenav();
       $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
     })
   </script>
 </body>
